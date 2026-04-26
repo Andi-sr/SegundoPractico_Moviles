@@ -1,5 +1,6 @@
 package com.example.segundopractico.data.models
 
-    data class Genero(
-        val name: String
-    )
+data class Genero(
+    val id: Int? = null,
+    val nombre: String
+)
