@@ -67,6 +67,7 @@ fun DetallesLibros(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Row(modifier = Modifier.fillMaxWidth()) {
+                    // No hace Nada
                     // Botón Editar
                     Button(
                         onClick = { onNavigateToEdit(libroId) },

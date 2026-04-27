@@ -96,8 +96,13 @@ fun ListaDeLibros(
         ) {
             Text("+", style = MaterialTheme.typography.headlineSmall)
         }
-        Button(onClick = { onVerGeneros() }) {
-            Text("Ver Géneros")
+        Row(modifier = Modifier.fillMaxWidth()) {
+
+            Spacer(modifier = Modifier.weight(1f))
+
+            Button(onClick = { onVerGeneros() }) {
+                Text("Ver Géneros")
+            }
         }
     }
 }

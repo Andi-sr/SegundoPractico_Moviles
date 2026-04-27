@@ -12,7 +12,8 @@ import kotlinx.coroutines.launch
 // Requisito: Estados obligatorios [cite: 65, 67, 68, 69]
 sealed class LibroState {
     object Loading : LibroState()
-    data class Success(val libros: List<Libro>, val generos: List<Genero>) : LibroState()
+    data class Success(val libros: List<Libro>,
+                       val generos: List<Genero>) : LibroState()
     data class Error(val message: String) : LibroState()
 }
 
@@ -71,6 +72,8 @@ class LibroViewModel : ViewModel() {
             }
         }
     }
+
+
 
     // Funciones adicionales para Libros (Puntos 3, 4 y 5 del PDF) [cite: 23, 34, 40]
     fun insertarLibro(libro: Libro) {
